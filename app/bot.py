@@ -1,6 +1,7 @@
 # This example requires the 'message_content' intent.
 
 import discord
+from tokens import discord_token
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -39,4 +40,4 @@ async def on_message(message):
             # await message.channel.send(register(message,prefix))
             await register(message,prefix)
 
-client.run('MTAzMjA1Mjk3NDQyMTI4Njk0Mw.Gx5hbh.O60IfDrxoPAlhEFN6yge_Etjejs3M-dLCSEiSw')
+client.run(discord_token)
